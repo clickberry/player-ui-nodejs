@@ -1,6 +1,6 @@
 {
   "name": "clickberry-player-ui",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "app.js",
   "description": "Player UI on Node.js",
   "scripts": {
