@@ -1,0 +1,36 @@
+{
+  "name": "clickberry-player-ui",
+  "version": "0.0.1",
+  "main": "app.js",
+  "description": "Player UI on Node.js",
+  "scripts": {
+    "start": "node ./bin/www",
+    "test": "mocha"
+  },
+  "author": "Konstantin Altuhov",
+  "keywords": [
+    "clickberry",
+    "webservices",
+    "node.js",
+    "Player UI",
+    "api",
+    "jwt"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/clickberry/player-ui-nodejs"
+  },
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/clickberry/player-ui-nodejs/issues"
+  },
+  "dependencies": {
+    "debug": "~2.2.0",
+    "express": "~4.12.4",
+    "jade": "^1.11.0",
+    "morgan": "~1.5.3",
+    "nconf": "^0.7.1",
+    "request": "^2.65.0",
+    "util": "^0.10.3"
+  }
+}
