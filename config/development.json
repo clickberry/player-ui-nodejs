@@ -5,7 +5,7 @@
   },
   "portal": {
     "uri": "http://qa.clbr.ws",
-    "videoPath": "/#/show/"
+    "videoPath": "/#/show"
   },
   "api":{
     "projects": "http://projects.qa.clbr.ws"
