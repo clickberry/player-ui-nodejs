@@ -1,6 +1,6 @@
 {
   "name": "clickberry-player-ui",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "main": "app.js",
   "description": "Player UI on Node.js",
   "scripts": {
@@ -13,8 +13,7 @@
     "webservices",
     "node.js",
     "Player UI",
-    "api",
-    "jwt"
+    "api"
   ],
   "repository": {
     "type": "git",
@@ -29,8 +28,8 @@
     "express": "~4.12.4",
     "jade": "^1.11.0",
     "morgan": "~1.5.3",
-    "nconf": "^0.7.1",
     "request": "^2.65.0",
-    "util": "^0.10.3"
+    "util": "^0.10.3",
+    "clickberry-config": "https://github.com/clickberry/config-nodejs#master"
   }
 }

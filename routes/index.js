@@ -1,5 +1,6 @@
 var express = require('express');
 var request = require('request');
+var config = require('clickberry-config');
 
 var router = express.Router();
 
@@ -9,17 +10,20 @@ module.exports = function () {
     });
 
     router.get('/:projectId', function (req, res, next) {
+        console.log(config.get('api:projects'));
+        console.log(req.params.projectId);
+
         var options = {
-            uri: 'http://projects.qa.clbr.ws/' + req.params.projectId
+            uri: config.get('api:projects') + '/' + req.params.projectId
         };
 
         request.get(options, function (err, response, body) {
             if (err) {
-                next(err);
+                return next(err);
             }
 
             if (!response || response.statusCode >= 400) {
-                return res.sendStatus(response.statusCode);
+                return res.redirect(301, config.get('portal:uri'))
             }
 
             body = JSON.parse(body);
@@ -28,7 +32,8 @@ module.exports = function () {
                 title: body.name,
                 imageUri: body.imageUri,
                 description: body.description,
-                projectId: req.params.projectId
+                projectId: req.params.projectId,
+                videoUri: config.get('portal:uri') + config.get('portal:videoPath')
             });
         });
 

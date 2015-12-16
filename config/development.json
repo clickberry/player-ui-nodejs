@@ -3,15 +3,11 @@
     "name": "local.portal.com",
     "port": "8080"
   },
-  "token": {
-    "accessSecret": "my access secret key"
+  "portal": {
+    "uri": "http://qa.clbr.ws",
+    "videoPath": "/#/show/"
   },
-  "mongodb": {
-    "connection": "mongodb://localhost/tmp-base"
-  },
-  "nsqd": {
-    "address": "192.168.99.100",
-    "port": "4150",
-    "disable": "disable"
+  "api":{
+    "projects": "http://projects.qa.clbr.ws"
   }
 }
