@@ -1,8 +1,8 @@
 {
-  "name": "clickberry-player-ui",
-  "version": "1.0.2",
+  "name": "clickberry-video-ui",
+  "version": "1.0.3",
   "main": "app.js",
-  "description": "Player UI on Node.js",
+  "description": "Video UI on Node.js",
   "scripts": {
     "start": "node ./bin/www",
     "test": "mocha"
@@ -12,16 +12,15 @@
     "clickberry",
     "webservices",
     "node.js",
-    "Player UI",
-    "api"
+    "Video UI"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/clickberry/player-ui-nodejs"
+    "url": "https://github.com/clickberry/video-ui-nodejs"
   },
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/clickberry/player-ui-nodejs/issues"
+    "url": "https://github.com/clickberry/video-ui-nodejs/issues"
   },
   "dependencies": {
     "debug": "~2.2.0",

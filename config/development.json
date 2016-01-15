@@ -4,10 +4,13 @@
     "port": "8080"
   },
   "portal": {
-    "uri": "http://qa.clbr.ws",
-    "videoPath": "/#/show"
+    "protocol": "https://",
+    "host": "qa-web.clickberry.tv",
+    "videoPath": "/#/show",
+    "playerHost": "qa-editor.clickberry.tv",
+    "playerPath": "/#/iplayer"
   },
   "api":{
-    "projects": "http://projects.qa.clbr.ws"
+    "projects": "https://qa-projects.clickberry.tv"
   }
 }

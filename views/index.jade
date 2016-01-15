@@ -1,10 +1,28 @@
 html
     head
         title!=title
+        meta(property='og:site_name', content='Clickberry')
+        meta(property='og:url', content!=videoUri)
         meta(property='og:title', content!=title)
-        meta(property='og:type', content='article')
-        meta(property='og:image', content!=imageUri)
         meta(property='og:description', content!=description)
+        meta(property='og:image', content!=imageUri)
+
+        meta(property='og:type', content='video')
+        meta(property='og:video:url', content!=playerUri)
+        meta(property='og:video:secure_url', content!=playerUri)
+        meta(property='og:video:type', content='text/html')
+        meta(property='og:video:width', content='1280')
+        meta(property='og:video:height', content='720')
+
+        meta(name='twitter:card', content='player')
+        meta(name='twitter:site', content='@clickberry')
+        meta(name='twitter:url', content!=videoUri)
+        meta(name='twitter:title', content!=title)
+        meta(name='twitter:description', content!=description)
+        meta(name='twitter:image', content!=imageUri)
+        meta(name='twitter:player', content!=playerUri)
+        meta(name='twitter:player:width', content='1280')
+        meta(name='twitter:player:height', content='720')
         script.
-            window.location.replace('#{videoUri}/#{projectId}');
+            window.location.replace('#{videoUri}');
     body()

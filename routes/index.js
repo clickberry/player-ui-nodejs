@@ -28,12 +28,16 @@ module.exports = function () {
 
             body = JSON.parse(body);
 
+            var projectId=req.params.projectId;
+            var videoUri = config.get('portal:protocol') + config.get('portal:host') + config.get('portal:videoPath') + '/' + projectId;
+            var playerUri = config.get('portal:protocol') + config.get('portal:playerHost') + config.get('portal:playerPath') + '/' + projectId;
+
             res.render('index', {
                 title: body.name,
                 imageUri: body.imageUri,
                 description: body.description,
-                projectId: req.params.projectId,
-                videoUri: config.get('portal:uri') + config.get('portal:videoPath')
+                videoUri: videoUri,
+                playerUri: playerUri
             });
         });
 
